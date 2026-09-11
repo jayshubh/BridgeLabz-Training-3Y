@@ -1,0 +1,90 @@
+﻿/* Basic setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #111827;
+    color: white;
+    padding: 20px;
+}
+
+/* Grid layout */
+.layout {
+    min-height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+/* Sidebar */
+aside {
+    background: #1f2937;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main boxes */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 25px;
+    background: #f3f4f6;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #bbb;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* One box spans two columns */
+.box5 {
+    grid-column: span 2;
+}
+
+/* Hover effect */
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px #888;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .box5 {
+        grid-column: span 1;
+    }
+}

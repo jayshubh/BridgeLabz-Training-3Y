@@ -1,0 +1,99 @@
+﻿/* Basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+/* Header uses Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #172554;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content uses Flexbox */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    padding: 5vh 5%;
+}
+
+.about,
+.skills {
+    width: 40%;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+}
+
+.about h2,
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.about p,
+.skills p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 0.8em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #172554;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    header,
+    main {
+        flex-direction: column;
+    }
+
+    header {
+        gap: 15px;
+    }
+
+    main {
+        gap: 20px;
+    }
+
+    .about,
+    .skills {
+        width: 90%;
+    }
+}
