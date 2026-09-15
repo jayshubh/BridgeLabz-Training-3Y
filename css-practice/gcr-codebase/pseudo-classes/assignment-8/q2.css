@@ -1,0 +1,16 @@
+/* q2: absolute positioning places each tooltip above its trigger. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #152238; color: #fff; font-family: 'Trebuchet MS', sans-serif; }
+.page { width: min(900px, 90%); text-align: center; }
+header { margin-bottom: 5rem; }
+.label { color: #f2cc8f; text-transform: uppercase; letter-spacing: .17em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .5rem 0 1rem; font: 700 clamp(2.3rem, 7vw, 5rem) Georgia, serif; }
+header p:last-child { color: #bcc8d5; }
+.tooltip-row { display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; }
+.tip-wrap { position: relative; cursor: help; outline: 0; }
+.term { display: grid; place-items: center; width: 110px; height: 110px; border: 1px solid #f2cc8f; border-radius: 50%; color: #f2cc8f; font: 700 1.3rem Georgia, serif; transition: background .3s ease-in-out, color .3s ease-in-out; }
+.tip-wrap:hover .term, .tip-wrap:focus .term { background: #f2cc8f; color: #152238; }
+/* The tooltip is hidden until hover or keyboard focus. */
+.tooltip { position: absolute; z-index: 1; bottom: calc(100% + 14px); left: 50%; width: 190px; padding: .7rem; transform: translateX(-50%) translateY(8px); border-radius: 6px; background: #fff; color: #152238; font-size: .85rem; line-height: 1.4; opacity: 0; pointer-events: none; transition: opacity .3s ease-in-out, transform .3s ease-in-out; }
+.tooltip::after { content: ""; position: absolute; top: 100%; left: 50%; border: 7px solid transparent; border-top-color: #fff; transform: translateX(-50%); }
+.tip-wrap:hover .tooltip, .tip-wrap:focus .tooltip { transform: translateX(-50%) translateY(0); opacity: 1; }

@@ -1,0 +1,17 @@
+/* q5: shared button rules keep spacing and interaction behavior consistent. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #e8f1f2; color: #27343b; font-family: 'Trebuchet MS', sans-serif; }
+.page { width: min(1000px, 90%); text-align: center; }
+header { margin-bottom: 3rem; }
+.label { color: #bb5d3c; text-transform: uppercase; letter-spacing: .17em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .4rem 0; font: 700 clamp(2.5rem, 7vw, 5rem) Georgia, serif; }
+.button-row { display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.btn { min-width: 130px; padding: .9rem 1.2rem; border: 2px solid transparent; border-radius: 8px; box-shadow: 0 7px 0 #27343b25; font: 700 1rem 'Trebuchet MS', sans-serif; cursor: pointer; transition: all .25s ease; }
+.btn:hover { transform: translateY(-4px); box-shadow: 0 11px 16px #27343b28; }
+.btn:active { transform: translateY(2px); box-shadow: 0 3px 0 #27343b25; }
+.btn:focus { outline: 3px solid #f0b45d; outline-offset: 4px; }
+.primary { background: #bb5d3c; color: #fff; }
+.secondary { background: #5b8d80; color: #fff; }
+.outline { border-color: #27343b; background: transparent; color: #27343b; }
+/* :disabled communicates that this action is currently unavailable. */
+.btn:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; transform: none; }

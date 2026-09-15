@@ -1,0 +1,16 @@
+/* q8: the first box uses the default content-box model; the second opts into border-box. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f6f2ed; color: #2d333b; font-family: 'Trebuchet MS', sans-serif; }
+.page { width: min(900px, 90%); padding: 3rem 0; text-align: center; }
+header { margin-bottom: 3rem; }
+.label { color: #bb5d3c; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .4rem 0 1rem; font: 700 clamp(2.3rem, 7vw, 4.8rem) Georgia, serif; }
+header p:last-child { color: #6d747a; }
+.comparison { display: flex; justify-content: center; align-items: stretch; gap: 3rem; flex-wrap: wrap; }
+.box { width: 280px; padding: 30px; border: 2px solid; text-align: left; border-radius: 10px; box-shadow: 0 12px 25px #2d333b1c; }
+.box h2 { margin-top: 0; font: 700 1.35rem Georgia, serif; }
+.box p { min-height: 100px; line-height: 1.6; }
+.box strong { display: block; margin-top: 1rem; }
+.default { box-sizing: content-box; border-color: #bb5d3c; background: #f7d6c7; }
+.border { box-sizing: border-box; border-color: #4b806d; background: #cfe5dc; }
+@media (max-width: 700px) { .comparison { gap: 2rem; } }

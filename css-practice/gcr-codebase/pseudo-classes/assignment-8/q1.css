@@ -1,0 +1,20 @@
+/* q1: pseudo-classes describe an element's current state or position. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f7f1e8; color: #263238; font-family: 'Trebuchet MS', sans-serif; }
+.page { width: min(1100px, 92%); padding: 4rem 0; }
+header { text-align: center; margin-bottom: 3rem; }
+.label { color: #bd5b3a; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .4rem 0; font: 700 clamp(2.5rem, 7vw, 5rem) Georgia, serif; }
+.state-row { display: flex; justify-content: center; align-items: stretch; gap: 1rem; flex-wrap: wrap; }
+.state-card { flex: 1 1 210px; max-width: 260px; padding: 1.5rem; border: 1px solid #dfd0bd; border-radius: 10px; background: #fffdf9; box-shadow: 0 8px 20px #483c3220; }
+.state-card a, .state-card button { display: inline-block; padding: .65rem .9rem; border: 2px solid #315c72; border-radius: 6px; background: #315c72; color: #fff; font: 700 1rem 'Trebuchet MS', sans-serif; text-decoration: none; cursor: pointer; transition: all .25s ease; }
+/* :hover changes the link while the pointer is over it. */
+.state-card a:hover { background: #f2cc8f; border-color: #bd5b3a; color: #263238; }
+/* :focus gives keyboard users a visible outline. */
+.state-card button:focus { outline: 3px solid #f2cc8f; outline-offset: 3px; }
+/* :active styles the moment of pressing. */
+.state-card .press:active { transform: scale(.9); background: #bd5b3a; }
+.state-card ul { padding-left: 1.2rem; }
+/* :nth-child selects only the second list item. */
+.state-card li:nth-child(2) { padding: .45rem; border-radius: 4px; background: #f2cc8f; color: #663f2b; }
+.state-card p { color: #667078; line-height: 1.6; }

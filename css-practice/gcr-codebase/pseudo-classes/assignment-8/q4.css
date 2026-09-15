@@ -1,0 +1,23 @@
+/* q4: element selector styles every paragraph consistently. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: #eef2f3; color: #20303a; font-family: 'Trebuchet MS', sans-serif; }
+p { line-height: 1.7; }
+/* Class selector styles a reusable label. */
+.site-header { padding: 4rem 8%; background: #20303a; color: #fff; }
+.site-header p { margin: 0; color: #e5aa55; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; }
+/* ID selector styles the unique content section. */
+#selector-demo { width: min(650px, 90%); margin: auto; padding: 2rem 0; }
+h1 { margin: .4rem 0; font: 700 clamp(2.4rem, 7vw, 5rem) Georgia, serif; }
+/* Descendant selector: paragraphs inside the section get muted text. */
+#selector-demo p { color: #617078; }
+/* Child combinator: direct list items receive spacing. */
+#selector-demo > ul > li { margin: .8rem 0; padding: .7rem; }
+/* Attribute selector: data-kind identifies a special item. */
+li[data-kind="attribute"] { border-left: 4px solid #e5aa55; }
+/* Adjacent sibling combinator: the paragraph next to the heading is larger. */
+h2 + .intro { font-size: 1.15rem; }
+/* General sibling combinator: every paragraph after the list has a top rule. */
+ul ~ p { padding-top: 1rem; border-top: 1px solid #cad4d7; }
+.featured { background: #d7eadf; border-radius: 5px; }
+a { color: #a44935; font-weight: bold; }
+footer { padding: 1.2rem; text-align: center; background: #d7e0e2; font-size: .85rem; }

@@ -1,0 +1,19 @@
+/* q9: hover combines a pseudo-class, color transition, transform, and shadow. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f1eee8; color: #293241; font-family: 'Trebuchet MS', sans-serif; }
+.page { width: min(1000px, 90%); }
+header { text-align: center; margin-bottom: 3rem; }
+.label { color: #a64b35; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .4rem 0; font: 700 clamp(2.4rem, 7vw, 5rem) Georgia, serif; }
+.effect-row { display: flex; justify-content: center; gap: 1.4rem; flex-wrap: wrap; }
+.effect { width: 190px; min-height: 155px; display: flex; flex-direction: column; justify-content: center; gap: .6rem; border: 2px solid; border-radius: 12px; font: 700 1.25rem Georgia, serif; cursor: pointer; transition: all .35s ease-in-out; }
+.effect small { font: .78rem 'Trebuchet MS', sans-serif; opacity: .75; }
+.effect:hover { transform: translateY(-9px) scale(1.06); box-shadow: 0 18px 25px #29324135; }
+.effect:active { transform: translateY(-2px) scale(1.01); }
+.effect:focus { outline: 3px solid #293241; outline-offset: 5px; }
+.warm { border-color: #c8553d; background: #f4c7b8; color: #743324; }
+.warm:hover { background: #c8553d; color: #fff; }
+.cool { border-color: #386581; background: #c7dce7; color: #24465b; }
+.cool:hover { background: #386581; color: #fff; }
+.green { border-color: #5b8065; background: #d6e6d1; color: #33513a; }
+.green:hover { background: #5b8065; color: #fff; }

@@ -1,0 +1,16 @@
+/* q3: grid creates a responsive gallery; overlay and scale animate together. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f0e8; color: #25313b; font-family: 'Trebuchet MS', sans-serif; }
+.page { width: min(1120px, 92%); margin: auto; padding: 4rem 0; }
+header { margin-bottom: 2.5rem; }
+.label { color: #a34f35; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .4rem 0; font: 700 clamp(2.7rem, 8vw, 5.8rem) Georgia, serif; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+figure { margin: 0; }
+.image-wrap { position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 12px 25px #25313b25; aspect-ratio: 4 / 3; }
+img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .4s ease, filter .4s ease; }
+.shade { position: absolute; inset: 0; background: #10182099; opacity: 0; transition: opacity .4s ease; }
+.image-wrap:hover img { transform: scale(1.1); filter: brightness(.72); }
+.image-wrap:hover .shade { opacity: 1; }
+figcaption { padding-top: .75rem; font: 700 1.05rem Georgia, serif; color: #a34f35; }
+@media (max-width: 700px) { .gallery { grid-template-columns: 1fr; } .page { width: min(480px, 88%); } }

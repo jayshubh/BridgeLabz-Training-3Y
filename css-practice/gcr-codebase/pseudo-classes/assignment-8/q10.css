@@ -1,0 +1,26 @@
+/* q10: shared box-sizing and flex layouts keep the mini interface responsive. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: #f5f0e8; color: #2d3436; font-family: 'Trebuchet MS', sans-serif; }
+.site-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 7%; border-bottom: 1px solid #ddcec0; background: #fffaf4; }
+.brand { color: #a04a35; text-decoration: none; font: 700 1.4rem Georgia, serif; }
+nav { display: flex; gap: 1.2rem; }
+nav a { padding: .4rem 0; border-bottom: 2px solid transparent; color: #596467; text-decoration: none; transition: all .25s ease; }
+nav a:hover, nav a.active { border-color: #a04a35; color: #a04a35; }
+main { flex: 1; display: grid; place-items: center; padding: 4rem 6%; }
+.ui-card { width: min(900px, 100%); display: flex; align-items: stretch; overflow: hidden; border: 1px solid #ddcec0; border-radius: 12px; background: #fffaf4; box-shadow: 0 18px 40px #463b3222; }
+.card-copy { flex: 1 1 55%; padding: clamp(1.5rem, 5vw, 3rem); }
+.ui-card img { width: 40%; min-height: 400px; object-fit: cover; }
+.label { color: #a04a35; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .4rem 0 1rem; font: 700 clamp(2.3rem, 6vw, 4.5rem)/1 Georgia, serif; }
+.card-copy > p:not(.label) { color: #697474; line-height: 1.7; }
+form { margin-top: 2rem; }
+label { display: block; margin-bottom: .5rem; font-weight: bold; }
+textarea { width: 100%; padding: .8rem; border: 1px solid #cdbdae; border-radius: 7px; background: #fffcf8; color: inherit; font: inherit; resize: vertical; }
+textarea:focus { border-color: #a04a35; outline: 3px solid #e7b077; outline-offset: 3px; }
+.form-actions { display: flex; gap: .7rem; margin-top: 1rem; }
+button { padding: .75rem 1rem; border: 1px solid #a04a35; border-radius: 7px; background: #a04a35; color: #fff; font: 700 .95rem 'Trebuchet MS', sans-serif; cursor: pointer; transition: all .25s ease; }
+button:hover { transform: translateY(-2px); box-shadow: 0 6px 12px #463b3230; }
+button:focus { outline: 3px solid #e7b077; outline-offset: 3px; }
+button.secondary { background: transparent; color: #a04a35; }
+footer { padding: 1.2rem; border-top: 1px solid #ddcec0; background: #fffaf4; color: #697474; text-align: center; font-size: .85rem; }
+@media (max-width: 700px) { .site-header { padding: 1rem 5%; } nav { gap: .7rem; } main { padding: 2rem 5%; } .ui-card { flex-direction: column-reverse; } .ui-card img { width: 100%; min-height: 220px; max-height: 280px; } }
