@@ -1,0 +1,16 @@
+/* q3: the linear section uses fixed attachment for a parallax-like scroll effect. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: 'Trebuchet MS', sans-serif; color: #fff; }
+.site-header { position: fixed; z-index: 2; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1rem 6%; background: #071e3dcc; backdrop-filter: blur(8px); }
+.site-header nav { display: flex; gap: 1.25rem; }
+.site-header a { color: #fff; text-decoration: none; }
+.site-header a:hover { color: #ffd166; }
+.gradient-section { min-height: 100vh; display: grid; place-items: center; padding: 7rem 10%; text-align: center; }
+.gradient-section > div { max-width: 650px; }
+.linear { background: linear-gradient(135deg, #071e3d 0%, #126782 52%, #ef8354 100%); background-attachment: fixed; }
+.radial { background: radial-gradient(circle at 50% 35%, #ffe29a, #d1495b 45%, #4b164c 100%); }
+.label { text-transform: uppercase; letter-spacing: .18em; font-weight: bold; color: #ffd166; }
+h1, h2 { margin: .25rem 0 1rem; font: 700 clamp(2.5rem, 8vw, 6rem) Georgia, serif; text-shadow: 0 3px 12px #0006; }
+.gradient-section p:last-child { font-size: 1.15rem; line-height: 1.7; }
+footer { position: fixed; z-index: 2; bottom: 0; width: 100%; padding: 1.25rem; background: #071e3d; text-align: center; }

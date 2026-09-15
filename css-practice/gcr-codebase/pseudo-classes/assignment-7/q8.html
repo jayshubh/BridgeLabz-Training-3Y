@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Box Model Exploration</title><link rel="stylesheet" href="q8.css"></head>
+<body>
+  <main class="page"><header><p>CSS anatomy</p><h1>Inside the box</h1></header>
+    <section class="exploration"><div class="margin-layer"><div class="border-layer"><div class="padding-layer"><div class="content-layer">Content<br><small>width: 180px</small></div></div></div></div>
+      <aside><h2>Four layers</h2><p><strong>Margin</strong> creates outside space.</p><p><strong>Border</strong> wraps the element.</p><p><strong>Padding</strong> gives content room.</p><p><strong>Content</strong> holds the actual text.</p></aside>
+    </section>
+    <section class="comparison"><article><h2>Default content-box</h2><div class="measure default">180px + padding + border</div></article><article><h2>border-box</h2><div class="measure border-box">180px total width</div></article></section>
+  </main>
+</body>
+</html>

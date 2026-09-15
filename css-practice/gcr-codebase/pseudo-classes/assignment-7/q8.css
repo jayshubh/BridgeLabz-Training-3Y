@@ -1,0 +1,21 @@
+/* q8: outlines and contrasting backgrounds make each box-model layer visible. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #edf2f4; color: #293241; font-family: 'Trebuchet MS', sans-serif; }
+.page { width: min(1000px, 92%); margin: auto; padding: 4rem 0; }
+header { text-align: center; margin-bottom: 3rem; }
+header p { color: #e07a5f; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: bold; }
+h1 { margin: .4rem 0; font: 700 clamp(2.4rem, 6vw, 4rem) Georgia, serif; }
+.exploration { display: flex; align-items: center; justify-content: center; gap: 4rem; flex-wrap: wrap; }
+.margin-layer { padding: 32px; background: #f2cc8f; outline: 2px dashed #b7791f; }
+.border-layer { padding: 18px; border: 12px solid #e07a5f; background: #fff; }
+.padding-layer { padding: 24px; background: #81b29a; }
+.content-layer { width: 180px; min-height: 120px; display: grid; place-items: center; text-align: center; background: #3d405b; color: #fff; font-weight: bold; }
+.content-layer small { color: #f2cc8f; font-weight: normal; }
+aside { width: 230px; padding: 1.5rem; background: #fff; border-left: 5px solid #3d405b; }
+aside h2 { margin-top: 0; } aside p { margin: .8rem 0; line-height: 1.4; }
+.comparison { display: flex; justify-content: center; gap: 2rem; margin-top: 4rem; flex-wrap: wrap; }
+.comparison article { padding: 1.25rem; background: #fff; }
+.comparison h2 { font-size: 1rem; }
+.measure { width: 180px; padding: 20px; border: 5px solid #e07a5f; background: #81b29a; font-size: .8rem; }
+.default { box-sizing: content-box; }
+.border-box { box-sizing: border-box; }
