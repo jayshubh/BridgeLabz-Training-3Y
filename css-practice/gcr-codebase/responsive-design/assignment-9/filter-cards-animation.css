@@ -1,8 +1,0 @@
-/* Cards fade in on load, then lift and clear their image filter on hover. */
-* { box-sizing: border-box; }
-body { margin: 0; background: #202b35; color: #fff; font-family: 'Trebuchet MS', sans-serif; }
-.page { width: min(1050px, 90%); margin: auto; padding: 4rem 0; } header { margin-bottom: 2.5rem; } .eyebrow { color: #f1c453; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: bold; } h1 { margin: .5rem 0; font: 700 clamp(2.4rem, 7vw, 5rem) Georgia, serif; }
-.profiles { display: flex; gap: 1.3rem; } .profiles article { flex: 1; padding-bottom: 1.3rem; border-radius: 9px; overflow: hidden; background: #ffffff12; opacity: 0; animation: fade-in .7s ease-in-out forwards; transition: transform .35s ease, box-shadow .35s ease; } .profiles article:nth-child(2) { animation-delay: .2s; } .profiles article:nth-child(3) { animation-delay: .4s; }
-@keyframes fade-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-.profiles article:hover { transform: translateY(-10px); box-shadow: 0 16px 28px #0005; } .profiles img { width: 100%; height: 270px; display: block; object-fit: cover; transition: filter .35s ease; } .gray { filter: grayscale(1); } .sepia { filter: sepia(.8); } .cool { filter: saturate(.5) hue-rotate(25deg); } .profiles article:hover img { filter: none; } .profiles h2, .profiles p { margin-left: 1.3rem; margin-right: 1.3rem; } .profiles h2 { margin-bottom: .3rem; font-family: Georgia, serif; } .profiles p { color: #b8c6cf; line-height: 1.5; }
-@media (max-width: 800px) { .profiles { flex-direction: column; } .profiles article { max-width: 500px; margin: auto; width: 100%; } }
