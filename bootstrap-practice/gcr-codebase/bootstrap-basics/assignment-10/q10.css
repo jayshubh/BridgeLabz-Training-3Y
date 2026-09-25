@@ -1,2 +1,15 @@
 /* Q10: Bootstrap carousel controls and progress utilities create the travel showcase. */
-body { background: #eef4f2; } .carousel img { height: min(62vh, 560px); object-fit: cover; filter: brightness(.7); } .carousel-caption { text-shadow: 0 2px 8px #000; } footer { margin-top: 1rem; }
+body {
+  background: #eef4f2;
+}
+.carousel img {
+  height: min(62vh, 560px);
+  object-fit: cover;
+  filter: brightness(.7);
+}
+.carousel-caption {
+  text-shadow: 0 2px 8px #000;
+}
+footer {
+  margin-top: 1rem;
+}

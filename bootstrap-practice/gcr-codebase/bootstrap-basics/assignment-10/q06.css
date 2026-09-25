@@ -1,0 +1,12 @@
+/* Q6: Bootstrap alert variants and dismissible alert classes provide notification states. */
+body {
+  min-height: 100vh;
+  background: #eef3f5;
+}
+.card {
+  max-width: 850px;
+  margin: auto;
+}
+.summary {
+  border-left: 4px solid #0d6efd !important;
+}

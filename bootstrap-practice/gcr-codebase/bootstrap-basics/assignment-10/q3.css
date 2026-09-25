@@ -1,2 +1,0 @@
-/* Q3: Bootstrap col-md-3 creates four desktop columns and responsive stacking. */
-body { background: #f7f4ee; color: #263238; } .product { transition: transform .25s ease, box-shadow .25s ease; border: 0; } .product:hover { transform: translateY(-7px); box-shadow: 0 1rem 2rem #26323825 !important; } .product img { height: 190px; object-fit: cover; }
