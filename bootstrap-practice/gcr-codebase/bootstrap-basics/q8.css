@@ -1,0 +1,2 @@
+/* Q8: col-md-4 creates three responsive pricing cards; transitions add lift on hover. */
+body { background: #f4f7fb; } .card { border: 0; box-shadow: 0 .25rem 1rem #1d355710; transition: transform .25s ease, box-shadow .25s ease; } .card:hover { transform: translateY(-8px); box-shadow: 0 1rem 2rem #1d355125; } .featured { border: 3px solid #ffc107; }

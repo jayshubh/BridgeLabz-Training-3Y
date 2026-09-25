@@ -1,0 +1,2 @@
+/* Q7: Bootstrap list-group, badge, and contextual text-bg classes show task status. */
+body { background: #f5f7fb; } .list-group { max-width: 760px; } .list-group-item { padding: 1rem 1.2rem; }

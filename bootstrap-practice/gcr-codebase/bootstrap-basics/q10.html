@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Question 10 - Travel Showcase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="q10.css">
+</head>
+<body>
+  <header class="container py-4 d-flex justify-content-between align-items-center">
+    <div>
+      <p class="text-primary fw-bold mb-1">QUESTION 10 - TRAVEL AGENCY SHOWCASE</p>
+      <h1 class="h2 mb-0">Wanderwell</h1>
+    </div>
+    <a class="btn btn-outline-primary" href="#contact">Plan a trip</a>
+  </header>
+  <main>
+    <section class="container">
+      <div id="destinations" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3500">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80" class="d-block w-100" alt="Tropical beach">
+            <div class="carousel-caption"><h2>Coastal mornings</h2><p>Wake up beside the Indian Ocean.</p></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1600&q=80" class="d-block w-100" alt="Mountain lake">
+            <div class="carousel-caption"><h2>High country</h2><p>Walk where the air feels new.</p></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80" class="d-block w-100" alt="Sunset landscape">
+            <div class="carousel-caption"><h2>Golden roads</h2><p>Take the scenic route home.</p></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#destinations" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#destinations" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </section>
+    <section class="container py-5">
+      <div class="d-flex justify-content-between"><h2 class="h4">Booking completion</h2><strong>70%</strong></div>
+      <div class="progress" role="progressbar" aria-label="Booking completion" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:70%">70%</div></div>
+    </section>
+  </main>
+  <footer id="contact" class="text-center bg-dark text-white p-4">hello@wanderwell.example | +1 555 0100</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
