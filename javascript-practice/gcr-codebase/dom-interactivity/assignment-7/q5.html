@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Image Gallery</title>
+<style>
+  #gallery { display: grid; grid-template-columns: repeat(3, 140px); gap: 8px; }
+  #gallery img { width: 140px; height: 100px; object-fit: cover; cursor: pointer; }
+  #modal { display: none; position: fixed; inset: 0; background: #000b; place-items: center; }
+  #modal.open { display: grid; }
+  #modal img { max-width: 80vw; max-height: 80vh; }
+</style></head>
+<body>
+  <div id="gallery"></div>
+  <div id="modal" role="dialog" aria-modal="true"><img alt="Expanded gallery image"></div>
+  <script src="q5.js"></script>
+</body>
+</html>

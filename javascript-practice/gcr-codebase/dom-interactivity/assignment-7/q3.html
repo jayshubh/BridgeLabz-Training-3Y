@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Multi-step Form</title></head>
+<body>
+  <form id="wizard">
+    <fieldset data-step="0"><legend>Step 1 of 3</legend><label>Name <input name="name" required></label></fieldset>
+    <fieldset data-step="1" hidden><legend>Step 2 of 3</legend><label>Email <input name="email" type="email" required></label></fieldset>
+    <fieldset data-step="2" hidden><legend>Step 3 of 3</legend><label>Password <input name="password" type="password" minlength="8" required></label></fieldset>
+    <button id="back" type="button">Back</button><button id="next" type="button">Next</button><button id="finish" type="submit" hidden>Finish</button>
+  </form>
+  <section id="summary" hidden></section>
+  <script src="q3.js"></script>
+</body>
+</html>

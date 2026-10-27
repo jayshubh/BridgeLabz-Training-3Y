@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Form Validation</title></head>
+<body>
+  <form id="signup" novalidate>
+    <label>Name <input name="name" required></label><small data-error="name"></small><br>
+    <label>Email <input name="email" type="email" required></label><small data-error="email"></small><br>
+    <label>Password <input name="password" type="password" minlength="6" required></label><small data-error="password"></small><br>
+    <button>Submit</button>
+  </form>
+  <p id="success" aria-live="polite"></p>
+  <script src="q9.js"></script>
+</body>
+</html>
