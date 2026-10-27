@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Movie Ticket Booking</title></head>
+<body>
+  <form id="booking-form" novalidate>
+    <label>Name <input name="name" required></label><small data-error="name"></small><br>
+    <label>Email <input name="email" required></label><small data-error="email"></small><br>
+    <label>Seats <input name="seats" type="number" min="1" max="10" required></label><small data-error="seats"></small><br>
+    <button>Book tickets</button>
+  </form>
+  <section id="ticket" aria-live="polite"></section>
+  <script src="q5.js"></script>
+</body>
+</html>

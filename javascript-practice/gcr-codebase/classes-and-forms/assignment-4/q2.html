@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Student Form Validator</title></head>
+<body>
+  <form id="student-form" novalidate>
+    <label>Name <input name="name" autocomplete="name" required></label><small data-error="name"></small><br>
+    <label>Email <input name="email" type="email" autocomplete="email" required></label><small data-error="email"></small><br>
+    <label>Phone <input name="phone" inputmode="numeric" required></label><small data-error="phone"></small><br>
+    <label>Password <input name="password" type="password" required></label><small data-error="password"></small><br>
+    <button>Validate</button>
+  </form>
+  <script src="q2.js"></script>
+</body>
+</html>
