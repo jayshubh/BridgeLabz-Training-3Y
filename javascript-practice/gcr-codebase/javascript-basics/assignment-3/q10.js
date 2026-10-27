@@ -1,15 +1,17 @@
 "use strict";
 
 function outer() {
-  console.log("Outer count before initialization: undefined (var hoisting)");
+  console.log(count);
   var count = 5;
-  function inner() {
-    console.log(`Inner count before initialization: undefined (shadowed var)`);
+  const inner = () => {
+    console.log(count);
     var count = 10;
-    console.log(`Inner count after initialization: ${count}`);
-  }
+    console.log(count);
+  };
   inner();
-  console.log(`Outer count after inner call: ${count}`);
+  console.log(count);
 }
 
 outer();
+// The arrow function still creates its own local scope for `var count`; its
+// hoisted local binding shadows the outer count just like a function declaration.
