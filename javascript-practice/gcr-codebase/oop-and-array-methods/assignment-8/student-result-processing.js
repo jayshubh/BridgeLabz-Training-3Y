@@ -23,9 +23,9 @@ const students = [
   new Student("Diya", [78, 82, 74]),
   new Student("Kabir", [55, 62, 58]),
 ];
-const result = students
+const result = ["Student Result Processing", ...students
   .map((student) => `${student.name}: average ${student.calculateAverage().toFixed(2)}, grade ${student.getGrade()}`)
-  .join("\n");
+].join("\n");
 
 if (typeof document !== "undefined") {
   const output = document.querySelector("#output");
