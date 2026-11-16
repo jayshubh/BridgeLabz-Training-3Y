@@ -18,6 +18,8 @@ that loads the JavaScript beside it.
 - `gcr-codebase/asynchronous-javascript/assignment-6/` — Promises, timers,
   async/await, and the event loop
 - `gcr-codebase/dom-interactivity/assignment-7/` — events, forms, and DOM
+- `gcr-codebase/oop-and-array-methods/assignment-8/` — classes, inheritance,
+  prototypes, error handling, and array methods
 
 ## Run
 
