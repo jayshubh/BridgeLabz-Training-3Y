@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Members Directory</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    .department { border: 1px solid #ccc; margin: 10px 0; padding: 12px; }
+    .employee { padding: 8px; margin: 5px 0; background: #f4f4f4; }
+    .manager, .highlight { background: #ffe08a !important; }
+    .contact { display: none; margin-left: 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Team Directory</h1>
+    <button id="toggleTeam" type="button">Collapse/Expand Team</button>
+    <button id="randomEmployee" type="button">Highlight Random Employee</button>
+    <section class="department" data-department="Engineering"><h2>Engineering</h2>
+      <article class="employee manager">Aman - Manager<span class="contact">aman@example.com</span></article>
+      <article class="employee">Neha - Developer<span class="contact">neha@example.com</span></article>
+      <article class="employee">Kabir - Tester<span class="contact">kabir@example.com</span></article>
+    </section>
+    <section class="department" data-department="Marketing"><h2>Marketing</h2>
+      <article class="employee manager">Sara - Manager<span class="contact">sara@example.com</span></article>
+      <article class="employee">Rohan - Analyst<span class="contact">rohan@example.com</span></article>
+      <article class="employee">Isha - Designer<span class="contact">isha@example.com</span></article>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="team-directory.js"></script>
+</body>
+</html>

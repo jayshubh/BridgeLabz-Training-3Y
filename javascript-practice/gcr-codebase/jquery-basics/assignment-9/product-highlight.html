@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Highlight</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    .products { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .product { border: 1px solid #bbb; padding: 12px; position: relative; }
+    .product.highlight { background: #fff3a6; }
+    .product[discount="true"] { border: 3px solid #e74c3c; }
+    .details { display: none; color: #555; }
+    .favorite { cursor: pointer; margin-top: 10px; display: inline-block; }
+    .favorite.selected { color: red; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Product Highlight</h1>
+    <section class="products">
+      <article class="product" data-stock="available" discount="true"><h2>Laptop</h2><p class="details">8 GB RAM, 512 GB SSD</p><span class="favorite">&#9825;</span></article>
+      <article class="product" data-stock="available"><h2>Headphones</h2><p class="details">Noise cancelling</p><span class="favorite">&#9825;</span></article>
+      <article class="product" data-stock="out"><h2>Smartwatch</h2><p class="details">Fitness and calls</p><span class="favorite">&#9825;</span></article>
+      <article class="product" data-stock="available" discount="true"><h2>Keyboard</h2><p class="details">Mechanical switches</p><span class="favorite">&#9825;</span></article>
+      <article class="product" data-stock="available"><h2>Mouse</h2><p class="details">Wireless optical</p><span class="favorite">&#9825;</span></article>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="product-highlight.js"></script>
+</body>
+</html>

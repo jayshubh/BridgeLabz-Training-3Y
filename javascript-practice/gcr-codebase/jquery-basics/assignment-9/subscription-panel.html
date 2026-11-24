@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Subscription Panel</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    .topic { margin: 8px 0; }
+    .topic button { margin-left: 8px; }
+    #message { color: green; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Event Subscriptions</h1>
+    <button id="subscribe" type="button">Subscribe</button>
+    <button id="unsubscribe" type="button">Unsubscribe</button>
+    <button id="addTopic" type="button">Add New Topic</button>
+    <section id="topics">
+      <div class="topic">JavaScript <button class="remove" type="button">Remove</button></div>
+      <div class="topic">Webinars <button class="remove" type="button">Remove</button></div>
+      <div class="topic">Career Events <button class="remove" type="button">Remove</button></div>
+      <div class="topic">Hackathons <button class="remove" type="button">Remove</button></div>
+      <div class="topic">Workshops <button class="remove" type="button">Remove</button></div>
+    </section>
+    <p id="message" aria-live="polite"></p>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="subscription-panel.js"></script>
+</body>
+</html>

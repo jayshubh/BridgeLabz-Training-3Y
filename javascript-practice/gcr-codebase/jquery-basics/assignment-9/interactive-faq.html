@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive FAQ</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    .faq { max-width: 700px; }
+    .question { background: #eee; padding: 12px; cursor: pointer; margin: 8px 0 0; }
+    .answer { display: none; padding: 12px; border: 1px solid #ddd; }
+    .active-question { background: #cfe8ff; }
+  </style>
+</head>
+<body>
+  <main class="faq">
+    <h1>Frequently Asked Questions</h1>
+    <h2 class="question">What courses are available?</h2><p class="answer">Java, JavaScript, CSS and Bootstrap.<input aria-label="Course feedback"></p>
+    <h2 class="question">Can I learn at my own pace?</h2><p class="answer">Yes, the modules are self-paced.<input aria-label="Pace feedback"></p>
+    <h2 class="question">Are certificates provided?</h2><p class="answer">A certificate is provided after completion.<input aria-label="Certificate feedback"></p>
+    <h2 class="question">Is there a placement program?</h2><p class="answer">Eligible learners can join placement activities.<input aria-label="Placement feedback"></p>
+    <h2 class="question">How do I ask for help?</h2><p class="answer">Use the support form or mentor session.<input aria-label="Support feedback"></p>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="interactive-faq.js"></script>
+</body>
+</html>

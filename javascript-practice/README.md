@@ -20,6 +20,8 @@ that loads the JavaScript beside it.
 - `gcr-codebase/dom-interactivity/assignment-7/` — events, forms, and DOM
 - `gcr-codebase/oop-and-array-methods/assignment-8/` — classes, inheritance,
   prototypes, error handling, and array methods
+- `gcr-codebase/jquery-basics/assignment-9/` — jQuery events, effects,
+  traversal, dynamic DOM, widgets, and form validation
 
 ## Run
 

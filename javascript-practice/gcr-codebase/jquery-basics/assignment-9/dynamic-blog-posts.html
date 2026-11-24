@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Blog Posts</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    #posts { max-width: 700px; }
+    .post { border: 1px solid #ccc; margin: 8px 0; padding: 12px; }
+    .keyword { background: #fff3b0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Blog Post Admin</h1>
+    <button id="addPost" type="button">Add New Post</button>
+    <button id="prependPost" type="button">Prepend Featured Post</button>
+    <button id="removePost" type="button">Remove Last Post</button>
+    <section id="posts">
+      <article class="post" data-keywords="javascript,html">JavaScript for Beginners</article>
+      <article class="post" data-keywords="css,design">Modern CSS Layouts</article>
+      <article class="post" data-keywords="jquery,dom">jQuery Event Patterns</article>
+      <article class="post" data-keywords="career,learning">Career Learning Tips</article>
+      <article class="post" data-keywords="bootstrap,responsive">Responsive UI Components</article>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="dynamic-blog-posts.js"></script>
+</body>
+</html>

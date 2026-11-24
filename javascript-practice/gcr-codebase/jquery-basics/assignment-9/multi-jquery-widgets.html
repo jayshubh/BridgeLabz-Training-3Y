@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi jQuery Widgets</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    .widget { border: 1px solid #bbb; margin: 8px 0; padding: 16px; }
+    .active { background: #dff3ff; border-color: #1687cc; }
+    .slide { display: none; }
+    .slide:first-of-type { display: block; }
+    #modal { display: none; position: fixed; inset: 30% 35%; padding: 20px; background: white; border: 2px solid #333; }
+    [title] { cursor: help; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Widget Dashboard</h1>
+    <section id="carousel" class="widget" title="This is a rotating carousel">
+      <article class="slide">Widget 1 - News</article>
+      <article class="slide">Widget 2 - Updates</article>
+      <article class="slide">Widget 3 - Offers</article>
+    </section>
+    <button id="openModal" class="widget" type="button" title="Open notification popup">Open Notification</button>
+    <section id="modal" role="dialog" aria-modal="true">
+      <h2>Notification</h2><p>Your dashboard is up to date.</p><button id="closeModal" type="button">Close</button>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>window.jq1 = jQuery.noConflict(true);</script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="multi-jquery-widgets.js"></script>
+</body>
+</html>

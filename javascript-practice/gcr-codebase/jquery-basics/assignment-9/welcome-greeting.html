@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome Page Greeting</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    #welcome { padding: 18px; margin: 16px 0; background: #e8f4ff; }
+    button { margin-right: 8px; padding: 8px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 id="greeting">Welcome</h1>
+    <section id="welcome" aria-live="polite">Welcome to our learning portal.</section>
+    <button id="changeGreeting" type="button">Change Greeting</button>
+    <button id="toggleWelcome" type="button">Toggle Welcome Message</button>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="welcome-greeting.js"></script>
+</body>
+</html>
